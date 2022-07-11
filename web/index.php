@@ -140,15 +140,15 @@ if(!isset($_SESSION['data_mbti_test'])){
 				  echo "
 					<tr style='border-top:solid 1px #999;'>
 					  <td rowspan='3' style='width:30px !important;'>".++$no."</td>
-					  <td colspan='2'>{$d->question}</td>
+					  <td colspan='2'>{$d['question']}</td>
 					</tr>
 					<tr>
-					  <td style='padding-left:16px !important;width:30px !important;' class='incomplete'><input type='radio' name='d[{$d->id}]' value='1' class='w3-radio' ".(isset($_GET['auto'])?($c==0?'checked ':''):'')."required /></td>
-					  <td class='right'>{$d->statement1}</td>
+					  <td style='padding-left:16px !important;width:30px !important;' class='incomplete'><input type='radio' name='d[{$d['id']}]' value='1' class='w3-radio' ".(isset($_GET['auto'])?($c==0?'checked ':''):'')."required /></td>
+					  <td class='right'>{$d['statement1']}</td>
 					</tr>
 					<tr>					
-					  <td><input type='radio' name='d[{$d->id}]' value='2' class='w3-radio' ".(isset($_GET['auto'])?($c==1?'checked ':''):'')."required /></td>
-					  <td>{$d->statement2}</td>
+					  <td><input type='radio' name='d[{$d['id']}]' value='2' class='w3-radio' ".(isset($_GET['auto'])?($c==1?'checked ':''):'')."required /></td>
+					  <td>{$d['statement2']}</td>
 					</tr>
 					   ";
 				  if($no%$num_perpage==0) {
