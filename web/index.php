@@ -38,7 +38,7 @@ header('Cache-Control: no-store, no-cache, must-revalidate');
 header('Cache-Control: post-check=0, pre-check=0', FALSE);
 header('Pragma: no-cache');
 if(!isset($_SESSION['data_mbti_test'])){
-	$query="SELECT * FROM mbti_test_statements ORDER BY rand()";
+	$query="SELECT * FROM mbti_test_statements";
 	$result=pg_query($query) or die('Query failed: ' . pg_last_error());
 	$data=array();
 	while($row=pg_fetch_array($result, null, PGSQL_ASSOC))
