@@ -58,10 +58,10 @@ if(!isset($_SESSION['data_mbti_test'])){
     <meta http-equiv="cache-control" content="no-cache" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta http-equiv="content-language" content="en" />
-	<meta name="author" content="Cahya DSN" />
+	<!-- <meta name="author" content="Cahya DSN" /> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 	<meta name="keywords" content="MBTI, personality, test" />
-	<meta name="description" content="MBTI (Myer Briggs Type Indicator) Personality Test ver <?php echo $version;?> created by cahya dsn" />
+	<meta name="description" content="MBTI (Myer Briggs Type Indicator) Personality Test ver <?php echo $version;?> " />
 	<meta name="robots" content="index, follow" />
 	<link rel="shortcut icon" href="<?php echo _ASSET;?>img/favicon.ico" type="image/x-icon">
 <?php if(_ISONLINE):?>
@@ -84,18 +84,6 @@ if(!isset($_SESSION['data_mbti_test'])){
   <div class="w3-top">
   <div class="w3-bar w3-theme-d5">
     <span class="w3-bar-item"># MBTI Test v<?php echo $version;?></span>
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-		<div class="w3-dropdown-hover">
-		  <button class="w3-button">Themes</button>
-		  <div class="w3-dropdown-content w3-white w3-card-4" id="theme">
-				<?php
-				$color=array("black","brown","pink","orange","amber","lime","green","teal","purple","indigo","blue","cyan");
-				foreach($color as $c){
-					echo "<a href='#' class='w3-bar-item w3-button w3-{$c} color' data-value='{$c}'> </a>";
-				}
-				?>	
-			</div>
-		</div>
 	</div>
 </div>  
 <div class="w3-container">
@@ -170,7 +158,6 @@ if(!isset($_SESSION['data_mbti_test'])){
 		  </div>
 		</div>
 		<h6>&nbsp;</h6>
-		<div><b>source code (v0.1) </b> : <a href='https://github.com/cahyadsn/mbti_test'>https://github.com/cahyadsn/mbti_test</a></div>
         <h2>&nbsp;</h2>
       </div>
     </div>		
@@ -178,7 +165,7 @@ if(!isset($_SESSION['data_mbti_test'])){
 </div>
 <div class="w3-bottom">
 	<div class="w3-bar w3-theme-d4 w3-center w3-padding">
-		MBTI Test v<?php echo $version;?> copyright &copy; 2021<?php echo (date('Y')>2021?date('-Y'):'');?> by <a href='mailto:cahyadsn@gmail.com'>cahya dsn</a><br />
+		MBTI Test v<?php echo $version;?> copyright &copy; 2021<?php echo (date('Y')>2021?date('-Y'):'');?> by <a href='www.cooljobz.com'>Cooljobz</a><br />
 	</div>
 </div>
 <div id="warning" class="w3-modal">

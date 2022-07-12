@@ -64,10 +64,10 @@ if(isset($_POST['d'])){
     <meta http-equiv="cache-control" content="no-cache" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta http-equiv="content-language" content="en" />
-	<meta name="author" content="Cahya DSN" />
+	<!-- <meta name="author" content="Cahya DSN" /> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 	<meta name="keywords" content="MBTI, personality, test" />
-	<meta name="description" content="MBTI (Myer Briggs Type Indicator) Personality Test ver <?php echo $version;?> created by cahya dsn" />
+	<meta name="description" content="MBTI (Myer Briggs Type Indicator) Personality Test ver <?php echo $version;?> " />
 	<meta name="robots" content="index, follow" />
 	<link rel="shortcut icon" href="<?php echo _ASSET;?>img/favicon.ico" type="image/x-icon">
 <?php if(_ISONLINE):?>
@@ -90,8 +90,8 @@ if(isset($_POST['d'])){
   <div class="w3-top">
   <div class="w3-bar w3-theme-d5">
     <span class="w3-bar-item"># MBTI Test v<?php echo $version;?></span>
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-		<div class="w3-dropdown-hover">
+    <!-- <a href="#" class="w3-bar-item w3-button">Home</a> -->
+		<!-- <div class="w3-dropdown-hover">
 		  <button class="w3-button">Themes</button>
 		  <div class="w3-dropdown-content w3-white w3-card-4" id="theme">
 				<?php
@@ -101,7 +101,7 @@ if(isset($_POST['d'])){
 				}
 				?>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 <div class="w3-container">
@@ -132,15 +132,7 @@ if(isset($_POST['d'])){
 					<b><?php echo $data['symbol'];?> Weakness:</b><br />
 					<?php echo $data['weakness'];?>
 				</div>
-				<div class='result'>
-					<b><?php echo $data['symbol'];?>s As Lovers:</b><br />
-				</div>
-				<div class='result'>
-					<b><?php echo $data['symbol'];?>s As Parents:</b><br />
-				</div>
-				<div class='result'>
-					<b><?php echo $data['symbol'];?>s As Friends:</b><br />
-				</div>
+				
 			</div>
 			<h2 class='w3-theme-l3' style='padding-left:20px;'><?php echo $data['symbol'];?> Personality Growth</h2>
 			<div class='w3-container'>
@@ -200,7 +192,7 @@ if(isset($_POST['d'])){
 </div>
 <div class="w3-bottom">
 	<div class="w3-bar w3-theme-d4 w3-center w3-padding">
-		MBTI Test v<?php echo $version;?> copyright &copy; 2021<?php echo (date('Y')>2021?date('-Y'):'');?> by <a href='mailto:cahyadsn@gmail.com'>cahya dsn</a><br />
+		MBTI Test v<?php echo $version;?> copyright &copy; 2021<?php echo (date('Y')>2021?date('-Y'):'');?> by <a href='www.cooljobz.com'>Cooljobz</a><br />
 	</div>
 </div>
 <script src="<?php echo _ASSET;?>js/mbti_test.v1.0.php?v=<?php echo md5(filemtime(_ASSET.'/js/mbti_test.v1.0.php'));?>"></script>
